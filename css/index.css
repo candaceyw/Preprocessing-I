@@ -126,17 +126,24 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.padding {
+  padding: 5%;
+}
 /* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
 }
 html,
 body {
   height: 100%;
 }
 h1 {
-  color: red;
+  font-size: 8rem;
+  color: hsl(26, 94%, 47%);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
 header {
   display: flex;
@@ -149,4 +156,34 @@ header nav a {
 }
 header h1 {
   flex-direction: column;
+  color: hsl(26, 94%, 47%);
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#experience {
+  background-color: white;
+  padding: 5%;
+}
+#skills {
+  background-color: hsl(26, 94%, 47%);
+  padding: 5%;
+}
+#portfolio {
+  background-color: white;
+  padding: 5%;
+}
+#about {
+  display: flex;
+  flex-direction: row;
+}
+#about .about-text {
+  width: 75%;
+  padding: 5%;
+}
+#contact {
+  background-color: hsl(26, 94%, 47%);
+  padding: 5%;
 }

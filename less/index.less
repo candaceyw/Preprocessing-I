@@ -48,13 +48,20 @@ table {
 	border-spacing: 0;
 }
 
-@font-color: red;
+// variables
+@primary-color: hsl(26, 94%, 47%);
+@reverse: white;
 
+// Mixins
+.padding {
+	padding: 5%;
+}
 
 /* Set every element's box-sizing to border-box */
 * {
 	box-sizing: border-box;
 	font-family: Arial, Helvetica, sans-serif;
+	width: 100%;
 }
 
 html, body {
@@ -63,12 +70,15 @@ html, body {
 
 
 h1 {
-	color: @font-color;
+	font-size: 8rem;
+	color: @primary-color;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
 }
 
 header {
 	display: flex;
-	padding: 5%;
+	.padding();
 	nav {
 		
 		a {
@@ -79,5 +89,43 @@ header {
 	}
 	h1 {
 		flex-direction: column;
+		color: @primary-color;
 	}
 }
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+#experience {
+	background-color: white;
+	.padding();
+}
+
+#skills {
+	background-color: @primary-color;
+	.padding();
+}
+
+#portfolio {
+	background-color: white;
+	padding: 5%;
+}
+
+
+#about {
+	display: flex;
+	flex-direction: row;
+	
+
+	.about-text {
+		width: 75%;
+		.padding();
+	}
+}
+
+#contact {
+		background-color: @primary-color;
+		.padding();
+	}
