@@ -160,6 +160,12 @@ html p,
 body p {
   font-size: 1.2rem;
 }
+html .fab,
+body .fab,
+html .fas,
+body .fas {
+  font-size: 6rem;
+}
 h1 {
   font-size: 4rem;
   color: hsl(26, 94%, 47%);
@@ -227,6 +233,9 @@ header {
   flex-direction: column;
   width: 100%;
 }
+#about .about-text h2 {
+  color: hsl(26, 94%, 47%);
+}
 .section-wrapper {
   line-height: 2;
 }
@@ -238,6 +247,24 @@ header {
   color: white;
   background-color: hsl(26, 94%, 47%);
   padding: 5%;
+}
+.icons {
+  display: flex;
+  flex-direction: row;
+}
+html .fab,
+body .fab,
+html .fas,
+body .fas {
+  margin-right: 100px;
+  justify-content: space-evenly;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+}
+i {
+  width: 2rem;
 }
 #about {
   display: flex;

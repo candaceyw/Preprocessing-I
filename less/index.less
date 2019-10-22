@@ -82,6 +82,10 @@ html, body {
 	p {
 		font-size: 1.2rem;
 	}	
+
+	.fab, .fas{
+		font-size: 6rem;
+	}
 }
 
 
@@ -164,6 +168,10 @@ header {
 	width: 100%;
 }
 
+#about .about-text h2 {
+    color: @primary-color;
+}
+
 .section-wrapper {
 	.line-height();
 }
@@ -179,7 +187,23 @@ header {
 	.padding();
 }
 
+.icons {
+	display: flex;
+	flex-direction: row;
+}
 
+html .fab, body .fab, html .fas, body .fas  {
+	margin-right: 100px;
+    justify-content: space-evenly;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+i {
+	width: 2rem;
+}
 
 
 #about {
