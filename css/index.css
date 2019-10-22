@@ -162,10 +162,16 @@ header {
 header .nav-wrapper {
   flex-direction: row;
   display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+header .nav-wrapper img {
+  width: 80px;
 }
 header nav {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 @media (max-width: 400px) {
   header nav {
@@ -177,8 +183,8 @@ header nav a {
   text-decoration: none;
   font-size: 1.5rem;
   font-family: Arial, Helvetica, sans-serif;
-  align-content: space-around;
   color: white;
+  text-align: center;
 }
 header {
   display: flex;
