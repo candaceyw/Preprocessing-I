@@ -201,9 +201,11 @@ header nav a {
   text-align: center;
 }
 @media (max-width: 500px) {
-  header nav a {
+  header nav {
+    display: flex;
     flex-direction: column;
     align-items: center;
+    line-height: 2;
   }
 }
 .heading {
@@ -225,6 +227,13 @@ header nav a {
   color: white;
   text-align: center;
 }
+@media (max-width: 500px) {
+  .heading {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+  }
+}
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -240,6 +249,41 @@ header nav a {
 .section-wrapper h3 {
   font-size: 1.4rem;
   font-weight: bold;
+}
+@media (max-width: 500px) {
+  .section-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+div#about.section-wrapper {
+  display: flex;
+  flex-direction: row;
+  background-image: url("/images/CW-headshot.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 60%;
+}
+@media (max-width: 500px) {
+  div#about.section-wrapper {
+    background-image: none;
+  }
+}
+div#about.section-wrapper .about-text {
+  width: 40%;
+  padding: 5%;
+}
+div#about.section-wrapper .about-text h2 {
+  font-size: 4rem;
+}
+div#about.section-wrapper .about-text .about-photo {
+  width: auto;
+}
+@media (max-width: 500px) {
+  div#about.section-wrapper .about-text {
+    width: 95%;
+  }
 }
 #experience {
   background-color: white;
@@ -262,43 +306,15 @@ header nav a {
 #skills .icons {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
 }
-html .fab,
-body .fab,
-html .fas,
-body .fas {
-  margin-right: 100px;
-  justify-content: space-evenly;
-  display: flex;
-  width: 100%;
-  align-items: center;
-  text-align: center;
-}
-#about {
-  display: flex;
-  flex-direction: row;
-  background-image: url("/images/CW-headshot.jpg");
-  background-repeat: no-repeat;
-  background-position: right;
-}
-#about .about-text {
-  width: 48%;
-  padding: 5%;
-}
-#about .about-text h2 {
-  font-size: 4rem;
-}
-#about .about-text .about-photo {
-  width: auto;
-}
-#contact {
-  color: white;
-  background-color: hsl(26, 94%, 47%);
-  padding: 5%;
-}
-#contact a {
-  text-decoration: none;
-  color: white;
+@media (max-width: 500px) {
+  #skills .icons {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0;
+    line-height: 3;
+  }
 }
 .container {
   padding: 2%;
@@ -309,4 +325,24 @@ body .fas {
 }
 .container .title {
   color: hsl(26, 94%, 47%);
+}
+@media (max-width: 500px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    padding: 5%;
+  }
+}
+#contact {
+  text-align: center;
+  color: white;
+  background-color: hsl(26, 94%, 47%);
+  padding: 5%;
+  margin-bottom: 15px;
+}
+#contact a {
+  text-decoration: none;
+  color: white;
 }

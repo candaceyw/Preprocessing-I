@@ -125,8 +125,6 @@ header {
 		// border: 1px solid white;
 		width: 100%;
 
-		
-
 				a {
 					text-decoration: none;
 					font-size: 1.25rem;
@@ -134,13 +132,13 @@ header {
 					color: @reverse;
 					text-align: center;
 
+					}
 					@media (max-width: 500px) {
+						display: flex;
 						flex-direction: column;
 						align-items: center;
-					
-					}
-		}
-		
+						line-height: 2;		
+		}	
 	}
 }
 
@@ -166,6 +164,11 @@ header {
 			color: @reverse;
 			text-align: center;
 	}
+	@media (max-width: 500px) {
+		display: flex;
+		flex-direction: column;
+		margin-top: 5rem;
+	}
 }
 
 .wrapper {
@@ -187,7 +190,51 @@ header {
 			font-size: 1.4rem;
 			font-weight: bold;
 	}
+	@media (max-width: 500px) {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		}
+				
+}	
+
+
+div#about.section-wrapper {
+	display: flex;
+	flex-direction: row;
+	background-image: url("/images/CW-headshot.jpg");
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: 60%;
+	@media (max-width: 500px) {
+		background-image: none;
+		}
+
+	.about-text {
+		width: 40%;
+		.padding();
+		h2 {
+			font-size: 4rem;
+		}
+	.about-photo {
+		width: auto;
+		
+	}
+	
+}	
+
+@media (max-width: 500px) {
+	.about-text{
+		width: 95%;
+	} 
 }
+
+	h2 {
+		// font-size: 1.6rem;
+	}
+}
+
+
 
 #experience {
 	background-color: white;
@@ -212,50 +259,24 @@ header {
 	.icons {
 		display: flex;
 		flex-direction: row;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		
+		@media (max-width: 500px) {
+			// display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-right: 0;
+			line-height: 3;
 	}
+
+	
 }
 
 
 
-html .fab, body .fab, html .fas, body .fas  {
-	margin-right: 100px;
-    justify-content: space-evenly;
-    display: flex;
-    width: 100%;
-    align-items: center;
-    text-align: center;
 }
-
-#about {
-	display: flex;
-	flex-direction: row;
-	background-image: url("/images/CW-headshot.jpg");
-	background-repeat: no-repeat;
-	background-position: right;
-
-	.about-text {
-		width: 48%;
-		.padding();
-		h2 {
-			font-size: 4rem;
-		}
-	.about-photo {
-		width: auto;
-	}
-	}
-}
-
-#contact {
-		color: @reverse;
-		background-color: @primary-color;
-		.padding();
-
-		a {
-			text-decoration: none;
-			color: @reverse;
-
-		}
-	}
 
 	.container {
 		padding: 2%;
@@ -267,4 +288,26 @@ html .fab, body .fab, html .fas, body .fas  {
 				color: @primary-color;
 			}
 
-}
+			@media (max-width: 500px) {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				width: 95%;
+				padding: 5%;
+} //end .container
+	}
+
+
+	#contact {
+		text-align: center;
+		color: @reverse;
+		background-color: @primary-color;
+		.padding();
+		margin-bottom: 15px;
+
+		a {
+			text-decoration: none;
+			color: @reverse;
+
+		}
+	}
