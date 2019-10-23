@@ -1,1 +1,348 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFVZ0e.ttf) format('truetype');
+}
+.padding {
+  padding: 5%;
+}
+.center {
+  display: flex;
+  justify-content: center;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.line-height {
+  line-height: 2;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+html p,
+body p {
+  font-size: 1.2rem;
+}
+html .fab,
+body .fab,
+html .fas,
+body .fas {
+  font-size: 6rem;
+}
+h2 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+header {
+  background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("/images/smoky-mountains.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+}
+header .nav-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+header .nav-wrapper img {
+  width: 60px;
+}
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+header nav a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: white;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 2;
+  }
+}
+.heading {
+  margin-top: 16rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 2;
+}
+.heading h1 {
+  font-size: 4rem;
+  color: hsl(26, 94%, 47%);
+  font-weight: bold;
+  flex-direction: column;
+  color: white;
+}
+.heading p {
+  color: white;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .heading {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+  }
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.wrapper #about .about-text h2 {
+  color: hsl(26, 94%, 47%);
+  line-height: 1;
+}
+.section-wrapper {
+  line-height: 2;
+}
+.section-wrapper h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+@media (max-width: 500px) {
+  .section-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+div#about.section-wrapper {
+  display: flex;
+  flex-direction: row;
+  background-image: url("/images/CW-headshot.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 60%;
+}
+@media (max-width: 500px) {
+  div#about.section-wrapper {
+    background-image: none;
+  }
+}
+div#about.section-wrapper .about-text {
+  width: 40%;
+  padding: 5%;
+}
+div#about.section-wrapper .about-text h2 {
+  font-size: 4rem;
+}
+div#about.section-wrapper .about-text .about-photo {
+  width: auto;
+}
+@media (max-width: 500px) {
+  div#about.section-wrapper .about-text {
+    width: 95%;
+  }
+}
+#experience {
+  background-color: white;
+  padding: 5%;
+}
+#experience h2 {
+  color: hsl(26, 94%, 47%);
+}
+#experience .experience {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+#skills {
+  color: white;
+  background-color: hsl(26, 94%, 47%);
+  padding: 5%;
+}
+#skills .icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+@media (max-width: 500px) {
+  #skills .icons {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0;
+    line-height: 3;
+  }
+}
+.container {
+  padding: 2%;
+  width: 48%;
+  -webkit-box-shadow: -1px 2px 13px 0px rgba(0, 0, 0, 0.45);
+  box-shadow: -1px 2px 13px 0px rgba(0, 0, 0, 0.45);
+  margin-bottom: 30px;
+}
+.container .title {
+  color: hsl(26, 94%, 47%);
+}
+@media (max-width: 500px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    padding: 5%;
+  }
+}
+#contact {
+  text-align: center;
+  color: white;
+  background-color: hsl(26, 94%, 47%);
+  padding: 5%;
+  margin-bottom: 15px;
+}
+#contact a {
+  text-decoration: none;
+  color: white;
+}
